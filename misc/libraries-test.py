@@ -32,3 +32,7 @@ print("BeautifulSoup version:{} (need at least 4.4)".format(bs4.__version__))
 
 import pyquery
 print("Loaded PyQuery")
+
+
+import seaborn as sns
+print("Seaborn version: {}".format(sns.__version__))
