@@ -39,3 +39,29 @@ print(x[0, :])
 
 print("Get every 2nd column of the first row")
 print(x[0, ::2])
+
+# ---
+print("Max is  ", x.max())
+print("Min is  ", x.min())
+print("Mean is ", x.mean())
+
+x = np.random.binomial(500, .5)
+print("number of heads:", x)
+
+
+# 3 ways to run the simulations
+
+# loop
+heads = []
+for i in range(500):
+    heads.append(np.random.binomial(500, .5))
+
+# "list comprehension"
+heads = [np.random.binomial(500, .5) for i in range(500)]
+
+# pure numpy
+heads = np.random.binomial(500, .5, size=500)
+
+histogram = plt.hist(heads, bins=10)
+
+heads.shape
