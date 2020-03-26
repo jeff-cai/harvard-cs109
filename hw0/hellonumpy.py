@@ -65,3 +65,5 @@ heads = np.random.binomial(500, .5, size=500)
 histogram = plt.hist(heads, bins=10)
 
 heads.shape
+
+plt.show()
